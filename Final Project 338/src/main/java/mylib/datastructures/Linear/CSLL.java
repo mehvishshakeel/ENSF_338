@@ -36,15 +36,29 @@ public class CSLL extends SLL {
 
     @Override
     public void deleteHead() {
-        super.deleteHead();
-        if (head.getNext() == tail) {
-            tail.setNext(head);
-        }
-
         if (head == null) {
-            tail = null;
+            System.out.println("List is empty!");
+            return;
         }
-        tail.setNext(head);
+        if (size == 1) {
+            head = null;
+            tail = null;
+            size--;
+            return;
+        }
+        else {
+            head = head.getNext();
+            tail.setNext(head);
+            size--;
+        }
+        if (size == 0) {
+            tail = null;
+            head = null;
+            return;
+        }
+        else if (head == tail) {
+            tail = head;
+        }
     }
 
     @Override
@@ -55,8 +69,27 @@ public class CSLL extends SLL {
 
     @Override
     public void delete(SNode node)  {
-        super.delete(node);
-        tail.setNext(head);
+        if (head == null) {
+            System.out.println("List is empty!");
+            return;
+        }
+        if (head == node) {
+            deleteHead();
+            return;
+        }
+        if (tail == node) {
+            deleteTail();
+            return;
+        }   
+        SNode current = head;
+        while (current.getNext()!= head) {
+            if (current.getNext() == node) {
+                current.setNext(node.getNext());
+                size--;
+                return;
+            }
+            current = current.getNext();
+        }
     }
 
     public void rotate(int k) {
