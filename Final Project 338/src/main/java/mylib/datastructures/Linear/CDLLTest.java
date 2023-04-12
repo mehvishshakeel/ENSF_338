@@ -6,7 +6,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-
 public class CDLLTest {
 
     private CDLL cdll;
@@ -143,7 +142,7 @@ public class CDLLTest {
     @Test(expected = Exception.class)
     public void testDeleteTailEmptyList() throws Exception {
         CDLL list = new CDLL();
-        list.deleteTail();
-    }
-}
 
+        list.deleteTail();
+     }
+}
