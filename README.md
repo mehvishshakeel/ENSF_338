@@ -1,70 +1,40 @@
 # ENSF 338 - Practical Data Structures and Algorithms
 ## Winter 2023
 
-### Project Outline
+### My Data Structures Library
+
+Welcome to my ENSF 338 project! In this assignment, I've created a comprehensive library of data structures and algorithms in Java, inspired by the provided project outline. Here's a summary of what I've accomplished:
+
+### Project Overview
 
 **Objective:**
-The objective of this project is to create a library for common data structures, including various linear data structures, tree structures, and graph algorithms.
+The goal of this project was to build a library for common data structures, including various linear data structures, tree structures, and graph algorithms.
 
-### Implementation Options
+**Languages Used:**
+I've implemented this project using Java, but the structure and concepts are applicable to Python as well.
 
-You can choose to implement this project in either one of the following languages:
-1. Java
-2. Python
+### Completed Tasks
 
-**Note:** The screenshots in this document are made with the assumption of implementing using Java. However, if you choose Python as the language of choice, your project folder will have a similar hierarchy.
+In the course of this project, I've successfully designed and implemented the following components:
 
-### Project Description
+#### Data Structures
+- **Linear Structures:** I've created implementations for various linear data structures, such as Singly Linked Lists (SLL), Doubly Linked Lists (DLL), Circular Linked Lists (CSLL), Circular Doubly Linked Lists (CDLL), Stacks, and Queues.
 
-In this project, you will develop your own library of data structures with their associated algorithms. The library will have a multilevel structure to separate each group of data structures into groups based on their class.
+- **Tree Structures:** I've implemented Binary Search Trees (BST) and AVL Trees, ensuring efficient data management and retrieval.
 
-The library will be created with a package name "myLib" and will have the following underlying structure:
+- **Heaps:** I've developed vector-based heap classes for both max and min heaps. These classes include a "heapsort" function to sort arrays efficiently.
 
-#### Datastructures
-- Contains subfolders for each class of data structures we are implementing.
-  - Linear
-    - Includes the class implementations of all the linear data structures listed below (you can use the short acronyms).
-      - SinglyLinkedList (SLL)
-      - DoublyLinkedList (DLL)
-      - CircularLinkedList (CSLL)
-      - CircularDoublyLinkedList (CDLL)
-      - Stack
-      - Queue
-  - Trees
-    - Contains the implementations of the following tree structures:
-      - BinarySearchTrees (BST)
-      - AVL
-  - Heaps
-    - Contains two implementations of the vector-based heap class (VBH), one for max heap and one for min heap.
-      - The class has a heapsort static function that receives an array, creates a heap structure, and sorts it, then returns it.
-  - Nodes
-    - Contains the implementation of all the different node classes needed for the data structures mentioned above.
+- **Nodes:** I've designed and implemented various node classes that are essential for the proper functioning of the data structures mentioned above.
 
-#### Graphalgo
-- This folder will have a static class with static methods that apply the different graph algorithms mentioned below.
-  - Graphalgo
-    - BFS
-    - DFS
-    - Dijkstra
+#### Graph Algorithms
+- I've created a static class with static methods in the "Graphalgo" folder. These methods include Breadth-First Search (BFS), Depth-First Search (DFS), and Dijkstra's algorithm.
 
-**Note:** All data structures will be implemented for integer data types as the data member. You can extend your work by making the structures work with generic data types for a bonus, as will be shown in the final project rubric evaluation.
+**Testing:**
+To ensure the functionality and correctness of these data structures, I've written unit tests using JUnit, which are located in the "test" subfolder of my project.
 
-### Testing
+**Project Finalization:**
+I've built the project using Maven to generate a "myLibrary.jar" file. This compiled library can be imported into any project for the convenient use of these data structure implementations.
 
-You will need to test all functionalities of the data structure by either:
+### Conclusion
 
-1. Writing a main app program that will comprehensively test the data structures by creating objects of them and testing all the possible functionalities.
-2. Using unit tests (Junit for Java that will be written in the test subfolder of your project, or pytest or unittest for Python).
-
-### Project Finalization
-
-To finalize and complete your project, you will build the project using Maven (for Java) to generate a `myLibrary.jar` file. This will be your compiled library that you can copy into any project and import it to use your data structure implementations whenever needed.
-
-The TAs will be testing your project by importing your library jar file into a tester program to run some tests. It is essential to adhere to naming conventions that will be published in each module separately.
-
-(Python implementation will also have to be packaged – instructions on how to achieve that will be published later).
-
-### Project Submission and Deadline
-
-The deadline for the project's final submission is:
-- Monday, 10th of April at 12:00 PM.
+This project has been an exciting journey in data structure implementation and algorithm development. I've learned valuable skills in Java programming and software design, and I'm proud to present my very own data structures library. The project submission deadline is set for Monday, the 10th of April at 12:00 PM.
