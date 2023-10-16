@@ -3,7 +3,7 @@
 
 ### My Data Structures Library
 
-Welcome to my ENSF 338 project! In this assignment, I've created a comprehensive library of data structures and algorithms in Java, inspired by the provided project outline. Here's a summary of what I've accomplished:
+I've created a comprehensive library of data structures and algorithms in Java, inspired by the provided project outline. Here's a summary of what I've accomplished:
 
 ### Project Overview
 
@@ -37,4 +37,4 @@ I've built the project using Maven to generate a "myLibrary.jar" file. This comp
 
 ### Conclusion
 
-This project has been an exciting journey in data structure implementation and algorithm development. I've learned valuable skills in Java programming and software design, and I'm proud to present my very own data structures library. The project submission deadline is set for Monday, the 10th of April at 12:00 PM.
+This project has been an exciting journey in data structure implementation and algorithm development. I've learned valuable skills in Java programming and software design, and I'm proud to present my very own data structures library.
